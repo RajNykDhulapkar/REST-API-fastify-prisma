@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "d5148c13-4513-476e-92bf-c0148d877607",
+    "colName": "Fastify Prisma Tutorial",
+    "created": "2022-05-27T21:24:21.092Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "aaca5bdb-7068-4b49-b34b-84005d047ea8",
+        "name": "User",
+        "containerId": "",
+        "created": "2022-05-27T21:24:21.094Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "efdd299b-756a-49f6-ad94-43d1c92282a8",
+        "name": "Product",
+        "containerId": "",
+        "created": "2022-05-27T21:24:21.095Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "b24b9c66-7490-4d91-ab6c-63922b0e99bb",
+    "name": "restapi-fastify-prisma-tdt",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-06-01T20:32:16.620Z",
+    "modified": "2022-06-01T20:35:29.741Z",
+    "data": [
+      {
+        "name": "host",
+        "value": "http://localhost:3000/"
+      },
+      {
+        "name": "name",
+        "value": "Raj Naik Dhulapkar"
+      },
+      {
+        "name": "email",
+        "value": "dhulapkarraj@gmail.com"
+      },
+      {
+        "name": "password",
+        "value": "BasicUserPassword"
+      },
+      {
+        "name": "accessToken",
+        "value": ""
+      }
+    ]
+  }
+]

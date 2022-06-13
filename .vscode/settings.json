@@ -1,0 +1,6 @@
+{
+    "advancedNewFile.exclude": {
+        "**/**/node_modules": true
+    },
+    "cSpell.words": ["Fastify"]
+}

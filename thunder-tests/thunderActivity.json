@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "c7e86ff9-4c28-4b38-95c7-33862fb44b2d",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{host}}/healthcheck",
+    "url": "http://localhost:3000/healthcheck",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-13T06:42:04.702Z",
+    "modified": "2022-06-13T06:47:02.879Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]

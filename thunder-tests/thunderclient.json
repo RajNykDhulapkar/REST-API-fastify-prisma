@@ -1,0 +1,95 @@
+[
+  {
+    "_id": "f6d3e1a9-25a9-4e46-b223-3f82c85fe8ed",
+    "colId": "d5148c13-4513-476e-92bf-c0148d877607",
+    "containerId": "aaca5bdb-7068-4b49-b34b-84005d047ea8",
+    "name": "Create user",
+    "url": "{{host}}/api/users",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-05-27T21:24:21.096Z",
+    "modified": "2022-06-13T06:39:02.442Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"{{email}}\",\n    \"name\": \"{{name}}\",\n    \"password\": \"{{password}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5be71ec7-9ceb-4962-b06f-35e5f7e26186",
+    "colId": "d5148c13-4513-476e-92bf-c0148d877607",
+    "containerId": "aaca5bdb-7068-4b49-b34b-84005d047ea8",
+    "name": "Find users",
+    "url": "{{host}}/api/users",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-05-27T21:24:21.097Z",
+    "modified": "2022-05-27T21:24:21.097Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    }
+  },
+  {
+    "_id": "d1fbe3c5-e2b8-48b3-97fa-6c7adc556834",
+    "colId": "d5148c13-4513-476e-92bf-c0148d877607",
+    "containerId": "aaca5bdb-7068-4b49-b34b-84005d047ea8",
+    "name": "Login",
+    "url": "{{host}}/api/users/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-05-27T21:24:21.098Z",
+    "modified": "2022-06-01T20:36:13.258Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.",
+        "action": "setto",
+        "value": "{{accessToken}}"
+      }
+    ]
+  },
+  {
+    "_id": "8bee62c5-126e-42ea-9f9e-9aa3b4cbe116",
+    "colId": "d5148c13-4513-476e-92bf-c0148d877607",
+    "containerId": "efdd299b-756a-49f6-ad94-43d1c92282a8",
+    "name": "Create product",
+    "url": "{{host}}/api/products",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-05-27T21:24:21.099Z",
+    "modified": "2022-05-27T21:24:21.099Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"title\": \"A cool product\",\n    \"price\": 14.99,\n    \"content\": \"This is actually an sick product\"\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    }
+  },
+  {
+    "_id": "10b4266c-222b-43ea-86f0-1cb1f5592c7b",
+    "colId": "d5148c13-4513-476e-92bf-c0148d877607",
+    "containerId": "efdd299b-756a-49f6-ad94-43d1c92282a8",
+    "name": "Get products",
+    "url": "{{host}}/api/products",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-05-27T21:24:21.101Z",
+    "modified": "2022-05-27T21:24:21.101Z",
+    "headers": []
+  }
+]
